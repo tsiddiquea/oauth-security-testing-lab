@@ -1,30 +1,31 @@
-# OAuth Misconfiguration Attack Simulation Lab
+# OAuth Security Tesing Lab
 
-## Overview
+## Project Overview
 
-The OAuth Misconfiguration Lab is a cybersecurity research project that demonstrates how improper validation of OAuth authorization flows can lead to serious security vulnerabilities such as open redirect exploitation and authorization code leakage.
+The OAuth Security Testing Lab is a hands-on cybersecurity project designed to demonstrate how improper implementation of the OAuth authorization framework can introduce critical security vulnerabilities in modern web systems.
 
-This project simulates both:
+This lab simulates both secure and vulnerable OAuth provider behaviors, allowing practical exploration of real-world authentication flaws such as:
 
-* A secure OAuth provider implementation
-* A vulnerable OAuth provider implementation
-* An attacker simulation environment
-* A client application requesting authorization
-* A security logging mechanism
+* Open redirect exploitation
+* Authorization code leakage
+* Improper token transmission
+* Weak validation of redirect URIs
+* Missing request state verification
 
-The lab allows practical experimentation with OAuth security weaknesses and defensive validation techniques, providing a realistic hands-on environment for understanding modern authentication risks.
+The project provides a controlled environment for analyzing authentication weaknesses and understanding how secure design principles prevent identity-based attacks.
 
 
-## Objectives
+## Objectives of the Lab
 
-This project was designed to:
+This project was developed to achieve the following security learning goals:
 
-* Demonstrate real-world OAuth attack surfaces
-* Simulate authorization code interception attacks
-* Show the importance of redirect URI validation
-* Compare secure vs insecure OAuth implementations
-* Provide defensive engineering insights
-* Build practical understanding of authentication security
+* Understand OAuth authorization workflow at a practical level
+* Demonstrate how misconfigurations lead to account compromise risks
+* Explore attacker techniques used to intercept authorization data
+* Implement logging mechanisms to detect suspicious authentication events
+* Compare vulnerable and hardened authentication server behavior
+
+The lab bridges theoretical security knowledge with real implementation logic.
 
 
 
@@ -78,16 +79,18 @@ Tracks:
 
 
 
-## Key Security Concepts Demonstrated
+## Security Concepts Demonstrated
 
-This lab implements and illustrates:
+This lab covers several important application security principles:
 
-* OAuth 2.0 Authorization Code Flow
-* Redirect URI validation importance
-* State parameter protection against CSRF
-* Token handling security
-* Access token exposure risks
-* Authentication flow integrity
+* Authorization code interception attacks
+* Authentication flow manipulation
+* Open redirect exploitation risks
+* Token confidentiality protection
+* Defensive validation logic implementation
+* Security monitoring and incident logging
+
+The project reflects realistic identity security threats faced by modern SaaS platforms and web applications.
 
 
 ## Example Attack Scenario
@@ -153,7 +156,7 @@ Security event logged
 
 ## Project Structure
 ```
-oauth-misconfiguration-lab/
+oauth-security-testing-lab/
 │
 ├── oauth_provider_secure.py
 ├── oauth_provider_vulnerable.py
@@ -178,42 +181,42 @@ oauth-misconfiguration-lab/
 
 ## Performance Characteristics
 
-* Lightweight simulation suitable for local execution
-* Minimal system resource consumption
-* Fast authorization code generation
-* Real-time logging for security monitoring
+* Lightweight Flask-based simulation environment
+* Minimal resource usage suitable for local testing
+* Fast authorization flow simulation
+* Real-time logging of authentication events
 
+The system is optimized for educational experimentation rather than production deployment.
 
-## Security & Ethical Use
+## Ethical Use Statement
 
-This project is intended strictly for:
+This project is intended solely for:
 
 * Cybersecurity education
-* Secure authentication research
-* Defensive engineering practice
-* Academic experimentation
+* Secure software engineering practice
+* Authentication protocol research
+* Defensive security training
 
-It must only be used in controlled and authorized environments.
-
+It must only be executed in controlled lab environments and never against real systems without authorization.
 
 ## Learning Outcomes
 
-By completing this project, the following competencies are demonstrated:
+Through this project, the following competencies are demonstrated:
 
-* Practical understanding of OAuth vulnerabilities
-* Secure authentication architecture design
-* Attack simulation and threat modeling
-* Defensive validation implementation
-* Security logging and monitoring strategies
-* Application-layer security engineering
+* Practical understanding of identity and access management risks
+* Secure authentication system design principles
+* Attack modeling against authorization protocols
+* Defensive coding and validation strategies
+* Security logging and monitoring concepts
+* Application security research methodology
+
 
 
 ## Author
 
-Developed as part of an independent cybersecurity learning initiative focused on authentication security, vulnerability research, and secure system design.
-
+Developed as part of an independent cybersecurity learning initiative focused on real-world vulnerability analysis and secure authentication engineering.
 
 ## License
 
-This project is released for educational and research purposes.
-Use responsibly.
+This project is provided for educational and research purposes.
+Use responsibly and only within authorized environments.
